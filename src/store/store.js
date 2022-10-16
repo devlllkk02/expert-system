@@ -11,7 +11,7 @@ export const useInfoStore = create((set) => ({
   district: "Colombo",
   setDistrict: (district) => set((state) => ({ district: district })),
   //Z-Score
-  zscore: 2.1232,
+  zscore: 1.1232,
   setZscore: (zscore) => set((state) => ({ zscore: zscore })),
   //Subjects
   subject01: "Biology",
@@ -38,6 +38,7 @@ export const useInfoStore = create((set) => ({
 
 // 01 - Medicine
 export const useMedicineStore = create((set) => ({
+  name: "Medicine",
   stream: "Biological Science",
   faculty: "Medicine",
   duration: 5,
@@ -69,6 +70,7 @@ export const useMedicineStore = create((set) => ({
     Trincomalee: "1.9202",
     Vavuniya: "1.8969",
   },
+  degree: "",
   recommendation: "",
   setRecommendation: (recommendation) =>
     set((state) => ({ recommendation: recommendation })),

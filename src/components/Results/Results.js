@@ -4,8 +4,10 @@ import "./Results.scss";
 
 import Navbar from "../Navbar/Navbar";
 import { useInfoStore, useMedicineStore } from "../../store/store";
+import Degree from "../Degree/Degree";
 function Results() {
   //State
+  const info = useInfoStore();
   const {
     name,
     stream,
@@ -42,12 +44,12 @@ function Results() {
       if (zscore >= zscorefordistrict) {
         medicine.setRecommendation("Recommended");
         medicine.setReason(
-          "Your Z-score is higher than the recommended Z-score"
+          "Your Z-score is higher than the recommended Z-score."
         );
       } else {
         medicine.setRecommendation("Not Recommended");
         medicine.setReason(
-          "Your Z-score is lower than the recommended Z-score"
+          "Your Z-score is lower than the recommended Z-score."
         );
       }
     } else {
@@ -114,6 +116,13 @@ function Results() {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="results__degrees">
+            <div className="results__header">
+              <p>Recommendation of Univeristy of Moratuwa Degrees</p>
+            </div>
+            {/* Medicine */}
+            <Degree number="01" info={info} degree={medicine} />
           </div>
         </div>
       </div>

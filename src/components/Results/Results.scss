@@ -5,12 +5,12 @@
   .results__body {
     width: 90%;
     margin: 0px auto;
-    background-color: lightcoral;
+    // background-color: lightcoral;
 
     .results__header {
       width: 100%;
-      height: 100%;
-      //   background-color: lightcoral;
+      height: 60px;
+        // background-color: lightcoral;
       border-bottom: 2px solid rgba($color: $blue, $alpha: 1);
 
       margin: 0px auto;
@@ -31,7 +31,7 @@
     .results__subheader {
       width: 100%;
       height: 50px;
-      background-color: lightcoral;
+    //   background-color: lightcoral;
 
       @include flexbox;
       justify-content: flex-start;
@@ -65,25 +65,25 @@
     //Summary
     .results__summary {
       width: 100%;
-      height: 60px;
-      // background-color: lightgreen;
+    //   background-color: lightgreen;
 
       .results__summary__body {
         width: 100%;
         min-height: 200px;
-        background-color: lightgreen;
+        // background-color: lightgreen;
 
         @include flexbox;
 
         .results__summary__body__details {
           width: 50%;
           min-height: 200px;
-          background-color: lightcyan;
+        //   background-color: lightcyan;
         }
         .results__summary__body__charts {
           width: 50%;
           min-height: 200px;
-          background-color: lightyellow;
+        //   background-color: lightyellow;
+          align-self: flex-start;
         }
       }
     }
