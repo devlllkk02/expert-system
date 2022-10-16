@@ -1,0 +1,42 @@
+/* ----- Page01.scss ----- */
+@import "../Theme.scss";
+
+.page01 {
+  .page01__container {
+    width: 600px;
+    height: 200px;
+    // background-color: lightgreen;
+    margin: 0px auto;
+    margin-top: 20px;
+
+    .page01__question {
+      width: 100%;
+      min-height: 100px;
+      // background-color: lightcoral;
+
+      @include flexbox;
+
+      p {
+        color: $blue;
+        font-size: $font-large;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+
+    .page01__options {
+      width: 100%;
+      min-height: 100px;
+      // background-color: lightyellow;
+
+      @include flexbox;
+    }
+    .page01__buttons {
+      width: 100%;
+      min-height: 100px;
+      // background-color: lightblue;
+
+      @include flexbox;
+    }
+  }
+}

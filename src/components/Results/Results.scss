@@ -1,0 +1,91 @@
+/* ----- Results.scss ----- */
+@import "../Theme.scss";
+
+.results {
+  .results__body {
+    width: 90%;
+    margin: 0px auto;
+    background-color: lightcoral;
+
+    .results__header {
+      width: 100%;
+      height: 100%;
+      //   background-color: lightcoral;
+      border-bottom: 2px solid rgba($color: $blue, $alpha: 1);
+
+      margin: 0px auto;
+
+      @include flexbox;
+      justify-content: flex-start;
+      align-items: flex-end;
+
+      p {
+        color: $blue;
+        font-weight: bold;
+        font-size: $font-large;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+      }
+    }
+
+    .results__subheader {
+      width: 100%;
+      height: 50px;
+      background-color: lightcoral;
+
+      @include flexbox;
+      justify-content: flex-start;
+
+      p {
+        color: $grey;
+        font-weight: bold;
+        font-size: $font-medium;
+        text-transform: uppercase;
+      }
+    }
+
+    .results__row {
+      @include flexbox;
+      justify-content: flex-start;
+      height: 30px;
+
+      :first-child {
+        color: $blue;
+        text-transform: uppercase;
+        min-width: 80px;
+        font-size: $font-small;
+      }
+      :last-child {
+        color: $grey;
+        padding-left: 10px;
+        font-size: $font-small;
+      }
+    }
+
+    //Summary
+    .results__summary {
+      width: 100%;
+      height: 60px;
+      // background-color: lightgreen;
+
+      .results__summary__body {
+        width: 100%;
+        min-height: 200px;
+        background-color: lightgreen;
+
+        @include flexbox;
+
+        .results__summary__body__details {
+          width: 50%;
+          min-height: 200px;
+          background-color: lightcyan;
+        }
+        .results__summary__body__charts {
+          width: 50%;
+          min-height: 200px;
+          background-color: lightyellow;
+        }
+      }
+    }
+  }
+}

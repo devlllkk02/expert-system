@@ -1,0 +1,61 @@
+/* ----- Navbar.scss ----- */
+@import "../Theme.scss";
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  //   background-color: lightgreen;
+
+  @include flexbox;
+
+  border-bottom: $borderGreyLight;
+
+  .navbar__container {
+    width: 90%;
+    height: 100%;
+    // background-color: lightcoral;
+
+    @include flexbox;
+    .navbar__image {
+      width: calc(100% * 0.2);
+      height: 100%;
+      //   background-color: lightblue;
+
+      @include flexbox;
+      justify-content: flex-start;
+
+      img {
+        height: 70px;
+        width: 70px;
+        object-fit: contain;
+        object-position: center center;
+      }
+    }
+    .navbar__title {
+      width: calc(100% * 0.6);
+      height: 100%;
+      //   background-color: lightgoldenrodyellow;
+
+      @include flexbox;
+
+      p {
+        color: $grey;
+        font-size: $font-medium;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+    .navbar__name {
+      width: calc(100% * 0.2);
+      height: 100%;
+      //   background-color: lightblue;
+
+      @include flexbox;
+      justify-content: flex-end;
+
+      p {
+        color: $grey;
+      }
+    }
+  }
+}

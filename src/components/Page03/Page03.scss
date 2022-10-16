@@ -1,0 +1,74 @@
+/* ----- Page03.scss ----- */
+@import "../Theme.scss";
+
+.page03 {
+  .page03__container {
+    width: 600px;
+    height: 200px;
+    // background-color: lightgreen;
+    margin: 0px auto;
+    margin-top: 20px;
+
+    .page03__question {
+      width: 100%;
+      min-height: 100px;
+      // background-color: lightcoral;
+
+      @include flexbox;
+
+      p {
+        color: $blue;
+        font-size: $font-large;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+
+    .page03__options {
+      width: 100%;
+      min-height: 100px;
+      // background-color: lightyellow;
+
+      @include flexbox;
+      flex-direction: column;
+      .page03__options__row {
+        width: 100%;
+        min-height: 100px;
+        // background-color: lightseagreen;
+
+        @include flexbox;
+        justify-content: space-between;
+
+        .page03__options__c1 {
+          width: 45%;
+          min-height: 100px;
+          // background-color: lightgreen;
+
+          @include flexbox;
+          justify-content: flex-start;
+
+          // margin-right: 10px;
+        }
+        .page03__options__c2 {
+          width: 45%;
+          min-height: 100px;
+          // background-color: lightsalmon;
+
+          @include flexbox;
+          justify-content: flex-end;
+        }
+      }
+    }
+    .page03__buttons {
+      width: 100%;
+      min-height: 100px;
+      // background-color: lightblue;
+
+      @include flexbox;
+
+      :last-child {
+        margin-left: 20px;
+      }
+    }
+  }
+}
